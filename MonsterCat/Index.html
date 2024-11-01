@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MonsterCat</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.3/dist/cdn.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <style>
+            :root, body {
+                font-family: "Bebas Neue";
+                min-height: 100dvh;
+            } 
+        </style>
+    </head>
+
+    <body class="overh-14 backdrop-blur-md flex flex-col items-center p-6 mx-24 bg-[url('background-blur.jpg')] bg-[length:100%] bg-no-repeat bg-center z-10 before:content-[''] before:absolute before:w-screen before:h-full before:z-0 before:bg-gradient-to-b before:from-black before:via-transparent before:via-10% before:to-black before:opacity-75">
+        <header x-data="{ show: false }" class="top-0 w-screen max-w-[90vw] fixed relative flex justify-between"> <!-- Header begin -->
+            <img class="w-12" src="https://storage.googleapis.com/monstercat/monstercat-logo.webp">
+            <i x-on:click="show = !show" class="bx bx-menu bx-md cursor-pointer"></i>
+
+            <!-- Social Media Begin -->
+            <div class="flex flex-col absolute top-[4em] right-0 gap-2">
+                <i class="bx bxl-instagram bx-sm"></i>
+                <i class="bx bxl-tiktok bx-sm"></i>
+                <i class="bx bxl-twitter bx-sm"></i>
+                <i class="bx bxl-twitch bx-sm"></i>
+                <i class="bx bxl-facebook bx-sm"></i>
+            </div> <!-- Social Media End -->
+
+            <!-- Navigation begin -->
+            <nav x-show="show" class="fixed flex flex-col gap-3 p-4 px-8 text-white right-0 top-0 bg-black h-screen min-w-[400px]">
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-2">
+                        <img class="w-16" src="https://storage.googleapis.com/monstercat/monstercat-logo.webp">
+                        <h2 class="text-3xl leading-none">monstercat</h2>
+                    </div>
+                    <i x-on:click="show = !show" class='bx bx-x bx-md cursor-pointer'></i>
+                </div>
+
+                <!-- Navigation Items Begin -->
+                <div>
+                    <ul class="text-xl text-gray-300 flex flex-col items-start">
+                        <li x-data="{ show: false }">
+                            <div x-on:click="show = !show" class="flex items-center cursor-pointer hover:text-white">
+                                Music
+                                <i class='bx bx-chevron-right'></i>
+                            </div>
+                            <ul x-show="show" class="ml-4 cursor-pointer">
+                                <li class="hover:text-white">our music</li>
+                                <li class="hover:text-white">instinct</li>
+                                <li class="hover:text-white">uncaged</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="cursor-pointer hover:text-white">
+                                Artists
+                            </div>
+                        </li>
+                        <li x-data="{ show: false }">
+                            <div x-on:click="show = !show" class="flex items-center cursor-pointer hover:text-white">
+                                About
+                                <i class='bx bx-chevron-right'></i>
+                            </div>
+                            <ul x-show="show" class="ml-4 cursor-pointer">
+                                <li class="hover:text-white">about monstercat</li>
+                                <li class="hover:text-white">diversity and inclusion</li>
+                                <li class="hover:text-white">code of ethics</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div> <!-- Navigation Items end -->
+            </nav> <!-- Navigation End -->
+        </header> <!-- Header End -->
+
+        <!-- Album Section Begin -->
+        <main class="container grid grid-cols-[50%_1fr] gap-6">
+            <!-- Album Image Begin -->
+            <div class="grid grid-cols-[auto_1fr]">
+                <div class="[writing-mode:vertical-rl] flex justify-end">
+                    <span>Instinct</span>
+                    <span>— Released May 22, 2020</span> 
+                </div>
+                <img class="w-full" src="https://cdx.monstercat.com/resized/8a169d846576fcdad7a0a6e04d371eb05b2a9397/600.webp">
+            </div> <!-- Album Image End -->
+            
+            <!-- Album Title Begin-->
+            <div class="flex flex-col justify-center">
+                <h1 class="text-6xl text-transparent [-webkit-text-stroke:2px_black;] ">LEVEL DAYS</h1>
+                <h2>CONRO</h2>
+                <div class="flex gap-2">
+                    <button class="flex items-center bg-teal-500 hover:bg-teal-100 text-2xl text-white font-bold py-2 px-6 pr-8">
+                        <i class="bx bx-play"></i>
+                        Listen now
+                    </button>
+                    <button class="flex items-center gap-2 border-white border-2 bg-transparent hover:bg-white text-2xl text-white font-bold py-2 px-6 pr-8">
+                        <i class='bx bx-share-alt bx-xs'></i>
+                        Share
+                    </button>
+                </div>
+            </div> <!-- Album Title End -->
+
+            <!-- Album Stream Begin -->
+            <div>
+                <h1 class="text-6xl">Stream it your way</h1>
+            </div> <!-- Album Stream End -->
+        </main> <!-- Album Section End --> 
+    </body>
+</html>

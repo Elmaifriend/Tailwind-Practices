@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <div class="grid grid-rows-[auto_1fr_auto] h-full bg-gray-50">
+
+            <header class="bg-gray-50 flex justify-center p-4">
+                <div class="max-w-screen-lg flex justify-between grow"> <!--Container start-->
+                    <div class="font-semibold uppercase"> <!--Logo Start-->
+                        <span class="text-amber-400	">Fla</span><span>voriz</span>
+                    </div> <!--Logo End-->
+                    
+                    <div> <!--Menu Start-->
+                        <ul class="flex flex-row gap-4">
+                            <li>Home</li>
+                            <li>About</li>
+                            <li>Recipes</li>
+                            <li>Blog</li>
+                            <li>Contact</li>
+                        </ul>
+                    </div> <!--Menu End-->
+                
+                    <div class="search-bar flex flex-row gap-2"> <!--Search Bar Start-->
+                        <div class="bar flex flex-row gap-2">
+                            <input type="text" class="bar max-h-8 rounded-xl bg-slate-300 text-slate-300 rounded-full" />
+                            <div class="icon max-h-8 bg-slate-300 rounded-full p-2 text-xs">🔎</div>
+                        </div>
+                        <div class="avatar">👤</div> 
+                    </div> <!--Search Bar End-->
+                </div> <!--Container End-->
+            </header> <!--Header End-->
+        
+
+        <div class="bg-gray-50 flex justify-center"> <!--Hero Start-->
+            <div class="max-w-screen-lg flex justify-between grow"> <!--Container Start-->
+                <img  class="w-full max-h-52 object-cover rounded-xl"
+            src="https://www.shutterstock.com/shutterstock/photos/601835939/display_1500/stock-photo-gardening-tools-hero-header-601835939.jpg">
+            </div> <!--Container End-->
+        </div> <!--Hero End-->
+
+        <div class="flex justify-center grow mt-8"> <!--Info Section Start-->
+            <div class="max-w-screen-lg flex justify-between grow gap-8"> <!--Container Start-->
+                <div class="relative"> <!--Image Left Start-->
+                    <img class="max-w-80 rounded-xl"
+                        src="https://cdn.pixabay.com/photo/2019/05/08/13/49/food-4188662_960_720.jpg"/>
+                    <p class="absolute top-6 left-6 text-slate-300">Contact Info</p>
+                </div>  <!--Image Left End-->
+            
+                <div class="flex flex-col justify-center">
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam reiciendis officia doloremque dolorem
+                        aut odit.
+                        Doloribus ipsam optio dicta ad quas. A accusamus perferendis ut illo culpa necessitatibus molestias
+                        laudantium!
+                    </p>
+                    <div class="flex flex-row gap-4 my-8">
+                        <div>
+                            <p class="font-semibold">Phone:</p>
+                            <p>1234567890</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold">Adress:</p>
+                            <p>Calle de tal, colonia de tal</p>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--Container End-->
+        </div> <!--Info Section End-->
+
+        <div class="flex justify-center mt-8"> <!--Map Section Start-->
+            <div class="max-w-screen-lg flex justify-between grow mb-8"> <!--Container Start-->
+                <iframe class="rounded-xl" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31287.040091419993!2d-117.02950962543927!3d32.51313799308301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1729304576304!5m2!1ses!2smx" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div> <!--Container End-->
+        </div> <!--Map Section End-->
+    </div> 
+    
+    <footer class="bg-gray-50 flex justify-center"> <!--Footer Start-->
+        <div class="flex gap-8 bg-gray-50 max-w-screen-lg flex grow justify-evenly"> <!-- Container Start -->
+            
+            <div class="max-w-40 text-5xl font-semibold"> <!-- Left Text Start -->
+                Send
+                <span class="text-amber-400">Us</span>
+                A Message
+            </div> <!-- Left Text End -->
+
+            <div> <!-- Form Section Start -->
+                <form>
+                    <div class="flex justify-between gap-12 mb-8">
+                        <div>
+                            <label class="block text-amber-400 font-semibold" for="full-name">Full Name</label>
+                            <input class="bg-gray-50" type="text" name="full-name" aria-label="Enter your name...">
+                            <div class="border-b-2 border-gray-200 min-h-2"></div>
+                
+                            <label class="block text-amber-400 font-semibold" for="comment">Comment</label>
+                            <input class="bg-gray-50" type="text" name="comment" id="comment" aria-label="Enter your email...">
+                            <div class="border-b-2 border-gray-200 min-h-2"></div>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-amber-400 font-semibold" for="email">Email Address</label>
+                            <input class="bg-gray-50" type="text" name="email">
+                            <div class="border-b-2 border-gray-200 min-h-2"></div>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-8 mb-8">
+                        <p class="text-slate-400">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        </p>
+                        <div>
+                            <input class="bg-neutral-800 hover:bg-neutral-700 text-white font-bold py-2 px-4 rounded" type="submit" value="Submit">
+                        </div>
+                    </div>
+                </form> 
+            </div> <!-- Form Section End -->
+        </div> <!-- Container End --> 
+    </footer> <!-- Footer End --> 
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.14.3/cdn.js"></script>
+
+</body>
+</html>
